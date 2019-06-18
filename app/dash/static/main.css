@@ -1,0 +1,16 @@
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+.flex_container{
+    display:flex; 
+    width: 80%;
+    align-content:space-evenly;
+}
+.flexy{
+    border: 1px solid black;
+    padding: 30px;
+}
+.number_box{
+    display: block;
+}

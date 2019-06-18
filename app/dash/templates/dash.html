@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Dashboard</h1>
+<div class="flex_container">
+    <div class="flexy">
+        <strong>Orders</strong>
+        <span class="number_box" id="Orders-box">{{context.orders}}</span>
+        <select id="Orders" onchange="update_function(this.value, this.id)">
+            <option value="month">Last month</option>
+            <option value="week">Last week</option>
+        </select>
+    </div>
+
+    <div class="flexy">
+        <strong>Revenue</strong>
+        <span class="number_box" id="Revenue-box">{{context.revenue}}</span>
+        <select id="Revenue" onchange="update_function(this.value, this.id)">
+            <option value="month">Last month</option>
+            <option value="week">Last week</option>
+        </select>
+    </div>
+
+    <div class="flexy">
+        <strong>Customers</strong>
+        <span class="number_box" id="Customers-box">{{context.customers}}</span>
+        <select id="Customers" onchange="update_function(this.value, this.id)">
+            <option value="month">Last month</option>
+            <option value="week">Last week</option>
+        </select>
+    </div>
+    <span id=test></span>
+{% endblock %}
